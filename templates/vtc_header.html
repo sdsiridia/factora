@@ -1,0 +1,86 @@
+{% load static %}
+<nav class="main-header navbar navbar-expand {{ dashboard.navbar }}">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer collapsedMenu" id="collapsedMenu" data-widget="pushmenu"><i class="bi bi-list"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{% url 'dashboard' %}" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{% url 'pos:tpv' %}" class="nav-link"><i class="bi bi-calculator"></i> TPV</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{% url 'pos:product_qr_code' %}" class="nav-link"><i class="bi bi-upc-scan"></i> Escanear producto</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item d-flex align-items-center me-3">
+            <div class="d-flex align-items-center">
+                <img src="{{ request.user.get_image }}" class="img-circle header-profile-img" alt="User Image" style="width: 40px; height: 30px;">
+                <span class="text-dark">{{ request.user.get_short_name|truncatechars:20 }}</span>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person"></i> Usuario: {{ request.user.username }}
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="left: inherit; right: 0;">
+                <span class="dropdown-header">Datos de tu conexión</span>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <p class="text-sm">Dirección ip</p>
+                    <p class="text-sm text-muted">{{ request.META.REMOTE_ADDR }}</p>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <p class="text-sm">Dispositivo</p>
+                    <p class="text-sm text-muted">{{ request.user_agent }}</p>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <p class="text-sm">Perfil actual</p>
+                    <p class="text-sm text-muted">
+                        {% if request.user.groups.all %}
+                            {{ request.session.group.name }}
+                        {% else %}
+                            Sin perfil
+                        {% endif %}
+                    </p>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <p class="text-sm">Último acceso</p>
+                    <p class="text-sm text-muted">{{ request.user.last_login }}</p>
+                </a>
+            </div>
+        </li>
+        {% if request.user.has_at_least_one_group %}
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown">
+                    <i class="bi bi-shield-lock"></i> Perfil: {{ request.session.group.name }}
+                    {% if request.user.has_more_than_one_group %}
+                        <i class="bi bi-caret-down-fill"></i>
+                    {% endif %}
+                </a>
+                {% if request.user.has_more_than_one_group %}
+                    <div class="dropdown-menu dropdown-menu-right">
+                        {% for group in user.groups.all %}
+                            {% if group.id != request.session.group.id %}
+                                <a href="{% url 'user_choose_profile' group.id %}" class="dropdown-item">
+                                    {{ group.name }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </li>
+        {% endif %}
+        <li class="nav-item">
+            <a class="nav-link btnLogout" href="{% url 'logout' %}">
+                <i class="bi bi-power"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+

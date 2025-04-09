@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'lib/bootstrap-4.6.0/css/bootstrap.min.css' %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @page {
+            width: 58mm;
+            height: {{ height }}px;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            font-size: 8px;
+            color: black !important;
+            min-height: 100%;
+        }
+
+        .content {
+            width: 58mm;
+            padding: 10px;
+        }
+
+        .head-name {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .head-voucher-number {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .head-details {
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 7px;
+        }
+
+        .head-data {
+            text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 7px;
+        }
+
+        .table {
+            color: black;
+            font-size: 7px;
+        }
+
+        #details thead tr th {
+            border-bottom: 1px solid black;
+            padding: 2px 0;
+        }
+
+        .table td, .table th {
+            padding: 2px 0;
+            color: black;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .img-logo {
+            margin-top: 5px;
+            width: 80px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+
+        .terms {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 6px;
+            margin-top: 10px;
+        }
+
+        .text-truncate {
+            max-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <img alt="" src="{{ object.company.base64_image }}" class="img-fluid d-block mx-auto img-logo">
+    <h1 class="head-name">{{ object.company.name|upper }}</h1>
+    <p class="text-center head-details">
+        Dirección: {{ object.company.address|default:"-" }}<br>
+        CIF: {{ object.company.ruc|default:"-" }}<br>
+        Teléfono: {{ object.company.phone|default:"-" }} / Móvil: {{ object.company.mobile|default:"-" }}
+    </p>
+    <p class="text-center head-voucher-number">TICKET N° {{ object.receipt_number_full }}</p>
+    <p class="head-data">
+        <b>Cliente:</b> {{ object.customer.user.names|default:"-" }}<br>
+        <b>Número de DNI:</b> {{ object.customer.dni|default:"-" }}<br>
+        <b>Forma de pago:</b> {{ object.get_payment_type_display|default:"-" }}
+    </p>
+    <table class="table table-sm" id="details" style="margin-bottom: 0">
+        <thead>
+        <tr>
+            <th style="width: 15%;">Cant.</th>
+            <th style="width: 40%;">Descripción</th>
+            <th style="width: 15%;">P.Unit.</th>
+            <th style="width: 15%;">Dscto</th>
+            <th style="width: 15%;" class="text-right">Subtotal</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for detail in object.invoicedetail_set.all %}
+            <tr>
+                <td>{{ detail.quantity }}</td>
+                <td class="text-truncate">{{ detail.product.name }}</td>
+                <td>{{ detail.price|floatformat:2 }}</td>
+                <td>{{ detail.total_discount|floatformat:2 }}</td>
+                <td class="text-right">{{ detail.total_amount|floatformat:2 }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <table class="table table-sm text-uppercase">
+        <tbody>
+        <tr>
+            <td class="text-right font-weight-bold">Subtotal</td>
+            <td class="text-right">{{ object.subtotal_with_tax|floatformat:2 }} €</td>
+        </tr>
+        <tr>
+            <td class="text-right font-weight-bold">Descuentos</td>
+            <td class="text-right">{{ object.total_discount|floatformat:2 }} €</td>
+        </tr>
+        <tr>
+            <td class="text-right font-weight-bold">Base Imponible</td>
+            <td class="text-right">{{ object.subtotal_with_tax|floatformat:2 }} €</td>
+        </tr>
+        <tr>
+            <td class="text-right font-weight-bold">IVA ({{ object.company.tax }}%)</td>
+            <td class="text-right">{{ object.total_tax|floatformat:2 }} €</td>
+        </tr>
+        <tr>
+            <td class="text-right font-weight-bold">Total</td>
+            <td class="text-right">{{ object.total_amount|floatformat:2 }} €</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="terms">
+        {{ object.company.terms_conditions|default:"Artículos procedentes de restos de Stock. 15 días de prueba. Exento los días de liquidación, textil y productos que funcionen. Garantía de fabricante." }}
+        ¡Gracias por tu compra! Nos vemos pronto :)
+    </p>
+</div>
+</body>
+</html>

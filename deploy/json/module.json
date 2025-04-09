@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "name": "Accesos",
+    "url": "/security/user/access/",
+    "icon": "bi bi-door-open",
+    "description": "Permite ver los accesos de los usuarios al sistema",
+    "module_type_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Tipos de Módulos",
+    "url": "/security/module/type/",
+    "icon": "bi bi-grid",
+    "description": "Permite administrar los tipos de módulos del sistema",
+    "module_type_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Grupos",
+    "url": "/security/group/",
+    "icon": "bi bi-people",
+    "description": "Permite administrar los grupos de usuarios del sistema",
+    "module_type_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Módulos",
+    "url": "/security/module/",
+    "icon": "bi bi-tools",
+    "description": "Permite administrar los módulos del sistema",
+    "module_type_id": 1
+  },
+  {
+    "id": 5,
+    "name": "Administradores",
+    "url": "/user/admin/",
+    "icon": "bi bi-person-fill-lock",
+    "description": "Permite administrar los usuarios administradores del sistema",
+    "module_type_id": 1
+  },
+  {
+    "id": 6,
+    "name": "Usuarios",
+    "url": "/user/",
+    "icon": "bi bi-person",
+    "description": "Permite administrar los usuarios del sistema",
+    "module_type_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Cambiar password",
+    "url": "/user/update/password/",
+    "icon": "bi bi-key",
+    "description": "Permite cambiar la contraseña del usuario actual",
+    "module_type_id": 1,
+    "is_visible": false
+  },
+  {
+    "id": 8,
+    "name": "Perfil",
+    "url": "/user/update/profile/",
+    "icon": "bi bi-person",
+    "description": "Permite actualizar los datos del usuario actual",
+    "module_type_id": 1,
+    "is_visible": false
+  },
+  {
+    "id": 9,
+    "name": "Proveedores",
+    "url": "/pos/provider/",
+    "icon": "bi bi-truck",
+    "description": "Permite administrar los proveedores del sistema",
+    "module_type_id": 2
+  },
+  {
+    "id": 10,
+    "name": "Compras",
+    "url": "/pos/purchase/",
+    "icon": "bi bi-truck-flatbed",
+    "description": "Permite administrar las compras del sistema",
+    "module_type_id": 2
+  },
+  {
+    "id": 11,
+    "name": "Productos",
+    "url": "/pos/product/",
+    "icon": "bi bi-box",
+    "description": "Permite administrar los productos del sistema",
+    "module_type_id": 2
+  },
+  {
+    "id": 12,
+    "name": "Categorías",
+    "url": "/pos/category/",
+    "icon": "bi bi-boxes",
+    "description": "Permite administrar las categorías de productos del sistema",
+    "module_type_id": 2
+  },
+  {
+    "id": 13,
+    "name": "Ajuste de Stock",
+    "url": "/pos/product/stock/adjustment/",
+    "icon": "bi bi-sliders",
+    "description": "Permite realizar ajustes de stock de los productos",
+    "module_type_id": 2
+  },
+  {
+    "id": 14,
+    "name": "Escanear producto",
+    "url": "/pos/product/qr-code/",
+    "icon": "bi bi-upc-scan",
+    "description": "Permite escanear productos mediante código QR",
+    "module_type_id": 2
+  },
+  {
+    "id": 15,
+    "name": "Tipos de Gastos",
+    "url": "/pos/expense/type/",
+    "icon": "bi bi-chat-square-text",
+    "description": "Permite administrar los tipos de gastos del sistema",
+    "module_type_id": 3
+  },
+  {
+    "id": 16,
+    "name": "Gastos",
+    "url": "/pos/expense/",
+    "icon": "bi bi-receipt",
+    "description": "Permite administrar los gastos del sistema",
+    "module_type_id": 3
+  },
+  {
+    "id": 17,
+    "name": "Cuentas por Pagar",
+    "url": "/pos/account/payable/",
+    "icon": "bi bi-cash",
+    "description": "Permite administrar las cuentas por pagar del sistema",
+    "module_type_id": 3
+  },
+  {
+    "id": 18,
+    "name": "Cuentas por Cobrar",
+    "url": "/pos/account/receivable/",
+    "icon": "bi bi-credit-card",
+    "description": "Permite administrar las cuentas por cobrar del sistema",
+    "module_type_id": 3
+  },
+  {
+    "id": 19,
+    "name": "Clientes",
+    "url": "/pos/customer/",
+    "icon": "bi bi-people",
+    "description": "Permite administrar los clientes del sistema",
+    "module_type_id": 4
+  },
+  {
+    "id": 20,
+    "name": "Punto de Venta",
+    "url": "/pos/tpv/",
+    "icon": "bi bi-cart",
+    "description": "Permite realizar ventas en el sistema",
+    "module_type_id": 4
+  },
+  {
+    "id": 21,
+    "name": "Facturas",
+    "url": "/pos/invoice/admin/",
+    "icon": "bi bi-cart",
+    "description": "Permite administrar las facturas del sistema",
+    "module_type_id": 4
+  },
+  {
+    "id": 22,
+    "name": "Cotizaciones",
+    "url": "/pos/quotation/",
+    "icon": "bi bi-cart",
+    "description": "Permite administrar las cotizaciones del sistema",
+    "module_type_id": 4
+  },
+  {
+    "id": 23,
+    "name": "Notas de Crédito",
+    "url": "/pos/credit/note/admin/",
+    "icon": "bi bi-cart",
+    "description": "Permite administrar las notas de crédito del sistema",
+    "module_type_id": 4
+  },
+  {
+    "id": 24,
+    "name": "Ventas por Producto",
+    "url": "/report/sale/product/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver las ventas por producto",
+    "module_type_id": 5
+  },
+  {
+    "id": 25,
+    "name": "Ventas por Cliente",
+    "url": "/report/sale/client/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver las ventas por cliente",
+    "module_type_id": 5
+  },
+  {
+    "id": 26,
+    "name": "Compras por Producto",
+    "url": "/report/purchase/product/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver las compras por producto",
+    "module_type_id": 5
+  },
+  {
+    "id": 27,
+    "name": "Compras por Proveedor",
+    "url": "/report/purchase/provider/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver las compras por proveedor",
+    "module_type_id": 5
+  },
+  {
+    "id": 28,
+    "name": "Gastos por Tipo",
+    "url": "/report/expense/type/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver los gastos por tipo",
+    "module_type_id": 5
+  },
+  {
+    "id": 29,
+    "name": "Cuentas por Cobrar",
+    "url": "/report/account/receivable/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver las cuentas por cobrar",
+    "module_type_id": 5
+  },
+  {
+    "id": 30,
+    "name": "Cuentas por Pagar",
+    "url": "/report/account/payable/",
+    "icon": "bi bi-bar-chart",
+    "description": "Permite ver las cuentas por pagar",
+    "module_type_id": 5
+  },
+  {
+    "id": 31,
+    "name": "Mi Perfil",
+    "url": "/pos/customer/update/profile/",
+    "icon": "bi bi-person",
+    "description": "Permite actualizar los datos del cliente actual",
+    "module_type_id": 4,
+    "is_visible": false
+  },
+  {
+    "id": 32,
+    "name": "Empresa",
+    "url": "/pos/company/update/",
+    "icon": "bi bi-building",
+    "description": "Permite actualizar los datos de la empresa",
+    "module_type_id": 4,
+    "is_visible": false
+  }
+]

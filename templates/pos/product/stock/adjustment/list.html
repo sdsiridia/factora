@@ -1,0 +1,44 @@
+{% extends 'list.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ... other content ... -->
+    
+    <!-- Botón de búsqueda de productos -->
+    <div class="form-group">
+        <label>Búsqueda de productos:</label>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-tasks"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"><i class="fas fa-search"></i> Buscar productos</a>
+                <!-- ... otras opciones ... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de búsqueda -->
+    <div class="modal fade" id="myModalSearchProducts" tabindex="-1" role="dialog" aria-labelledby="myModalSearchProductsLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalSearchProductsLabel">Búsqueda de productos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+                    <p>Contenido del modal de búsqueda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+    <!-- CAMBIO 4: Actualización de la versión de Bootstrap JS -->
+    <script src="{% static 'lib/bootstrap-5.2.0/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Otros scripts -->
+{% endblock %} 

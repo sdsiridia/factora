@@ -1,0 +1,77 @@
+{% load static %}
+{% load pos_extras %}
+<aside class="main-sidebar elevation-2 {{ dashboard.sidebar }}">
+    
+    <div class="sidebar">
+        <div>
+            <a href="{% url 'dashboard' %}" class="brand-link {{ dashboard.brand_logo }}">
+                <img src="{{ dashboard.get_image }}" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+            </a>
+        </div>
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-header">MENÚ</li>
+                {% if request.user.get_session_user_group.get_session_module_types %}
+                    {% for module_type in request.user.get_session_user_group.get_session_module_types %}
+                        <li class="nav-item has-treeview {% if request.resolver_match.url_name in module_type.get_session_modules|map:'url'|map:'split:'|map:'last' %}menu-open{% endif %}" data-name="module_header" data-id="{{ forloop.counter }}">
+                            <a class="nav-link {% if request.resolver_match.url_name in module_type.get_session_modules|map:'url'|map:'split:'|map:'last' %}active{% endif %}" data-name="module_header">
+                                <i class="nav-icon {{ module_type.icon }}"></i>
+                                <p>{{ module_type.name }}<i class="right bi bi-chevron-left"></i></p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                {% for module in module_type.get_session_modules %}
+                                    <li class="nav-item">
+                                        <a href="{{ module.url }}" class="nav-link {% if request.path == module.url or request.path == module.url|slice:'0:-1' %}active{% endif %}" data-name="submodule" data-id="{{ forloop.counter }}">
+                                            <i class="{{ module.icon }} nav-icon"></i>
+                                            <p>{{ module.name }}</p>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+                {% for module in request.user.get_session_user_group.get_session_modules %}
+                    {% if not module.is_customer_only or request.user.is_customer %}
+                        <li class="nav-item">
+                            <a href="{{ module.url }}" class="nav-link {% if request.path == module.url or request.path == module.url|slice:'0:-1' %}active{% endif %}" data-name="single_module" data-id="{{ forloop.counter }}">
+                                <i class="nav-icon {{ module.icon }}"></i>
+                                <p>{{ module.name }}</p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+
+                <li class="nav-item has-treeview">
+                    <a class="nav-link" data-name="module_header">
+                        <i class="nav-icon bi bi-gear"></i>
+                        <p>
+                            Ajustes
+                            <i class="right bi bi-chevron-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{% url 'user_update_profile' %}" class="nav-link">
+                                <i class="nav-icon bi bi-person"></i>
+                                <p>Editar Perfil</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'user_update_password' %}" class="nav-link">
+                                <i class="nav-icon bi bi-key"></i>
+                                <p>Cambiar Contraseña</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'pos:company_update' %}" class="nav-link">
+                                <i class="nav-icon bi bi-building"></i>
+                                <p>Empresa</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>

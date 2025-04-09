@@ -1,0 +1,4146 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can view Cuenta por pagar",
+    "content_type": 6,
+    "codename": "view_account_payable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can add Cuenta por pagar",
+    "content_type": 6,
+    "codename": "add_account_payable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Cuenta por pagar",
+    "content_type": 6,
+    "codename": "delete_account_payable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Cuenta por cobrar",
+    "content_type": 7,
+    "codename": "view_account_receivable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Cuenta por cobrar",
+    "content_type": 7,
+    "codename": "add_account_receivable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can delete Cuenta por cobrar",
+    "content_type": 7,
+    "codename": "delete_account_receivable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can add Categoria",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can change Categoria",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can delete Categoria",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can view Categoria",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can change Compañia",
+    "content_type": 9,
+    "codename": "change_company"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can add Cliente",
+    "content_type": 10,
+    "codename": "add_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can change Cliente",
+    "content_type": 10,
+    "codename": "change_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can delete Cliente",
+    "content_type": 10,
+    "codename": "delete_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can view Cliente",
+    "content_type": 10,
+    "codename": "view_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can add Gasto",
+    "content_type": 11,
+    "codename": "add_expense"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can change Gasto",
+    "content_type": 11,
+    "codename": "change_expense"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can delete Gasto",
+    "content_type": 11,
+    "codename": "delete_expense"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can view Gasto",
+    "content_type": 11,
+    "codename": "view_expense"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Tipo de Gasto",
+    "content_type": 12,
+    "codename": "view_expense_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Tipo de Gasto",
+    "content_type": 12,
+    "codename": "add_expense_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Tipo de Gasto",
+    "content_type": 12,
+    "codename": "change_expense_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Tipo de Gasto",
+    "content_type": 12,
+    "codename": "delete_expense_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Factura",
+    "content_type": 13,
+    "codename": "view_invoice_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Factura",
+    "content_type": 13,
+    "codename": "add_invoice_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can update Factura",
+    "content_type": 13,
+    "codename": "change_invoice_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Factura",
+    "content_type": 13,
+    "codename": "delete_invoice_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Factura | Cliente",
+    "content_type": 13,
+    "codename": "view_invoice_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can print Factura",
+    "content_type": 13,
+    "codename": "print_invoice"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can view Producto",
+    "content_type": 15,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can add Producto",
+    "content_type": 15,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can change Producto",
+    "content_type": 15,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can delete Producto",
+    "content_type": 15,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can adjust_product_stock Producto",
+    "content_type": 15,
+    "codename": "adjust_product_stock"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can add Promoción",
+    "content_type": 16,
+    "codename": "add_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can change Promoción",
+    "content_type": 16,
+    "codename": "change_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can delete Promoción",
+    "content_type": 16,
+    "codename": "delete_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can view Promoción",
+    "content_type": 16,
+    "codename": "view_promotion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can add Proveedor",
+    "content_type": 18,
+    "codename": "add_provider"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can change Proveedor",
+    "content_type": 18,
+    "codename": "change_provider"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can delete Proveedor",
+    "content_type": 18,
+    "codename": "delete_provider"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can view Proveedor",
+    "content_type": 18,
+    "codename": "view_provider"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can view Compra",
+    "content_type": 19,
+    "codename": "view_purchase"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can add Compra",
+    "content_type": 19,
+    "codename": "add_purchase"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can delete Compra",
+    "content_type": 19,
+    "codename": "delete_purchase"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can view Proforma",
+    "content_type": 21,
+    "codename": "view_quotation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can add Proforma",
+    "content_type": 21,
+    "codename": "add_quotation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can change Proforma",
+    "content_type": 21,
+    "codename": "change_quotation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can delete Proforman",
+    "content_type": 21,
+    "codename": "delete_quotation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can print Proforma",
+    "content_type": 21,
+    "codename": "print_quotation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can view Devolución",
+    "content_type": 25,
+    "codename": "view_credit_note_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can add Devolución",
+    "content_type": 25,
+    "codename": "add_credit_note_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can delete Devolución",
+    "content_type": 25,
+    "codename": "delete_credit_note_admin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can view Devolución | Cliente",
+    "content_type": 25,
+    "codename": "view_credit_note_customer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can print Devolución",
+    "content_type": 25,
+    "codename": "print_credit_note"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view Dashboard",
+    "content_type": 27,
+    "codename": "view_dashboard"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can view Tipo de Módulo",
+    "content_type": 28,
+    "codename": "view_module_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can add Tipo de Módulo",
+    "content_type": 28,
+    "codename": "add_module_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can change Tipo de Módulo",
+    "content_type": 28,
+    "codename": "change_module_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can delete Tipo de Módulo",
+    "content_type": 28,
+    "codename": "delete_module_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can view Acceso del usuario",
+    "content_type": 29,
+    "codename": "view_user_access"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can delete Acceso del usuario",
+    "content_type": 29,
+    "codename": "delete_user_access"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can add Módulo",
+    "content_type": 30,
+    "codename": "add_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can change Módulo",
+    "content_type": 30,
+    "codename": "change_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can delete Módulo",
+    "content_type": 30,
+    "codename": "delete_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can view Módulo",
+    "content_type": 30,
+    "codename": "view_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can add Usuario",
+    "content_type": 32,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can change Usuario",
+    "content_type": 32,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can delete Usuario",
+    "content_type": 32,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can view Usuario",
+    "content_type": 32,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can view POS",
+    "content_type": 1,
+    "codename": "view_pos"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Administrador",
+    "permissions": [
+      91,
+      9,
+      10,
+      11,
+      12,
+      22,
+      23,
+      21,
+      25,
+      26,
+      24,
+      27,
+      28,
+      29,
+      30,
+      31,
+      72,
+      73,
+      75,
+      71,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      42,
+      43,
+      40,
+      45,
+      46,
+      47,
+      49,
+      44,
+      51,
+      54,
+      52,
+      53,
+      50,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      64,
+      65,
+      63,
+      67,
+      68,
+      69,
+      70,
+      66,
+      76,
+      83,
+      84,
+      85,
+      86,
+      78,
+      79,
+      80,
+      77,
+      82,
+      81,
+      87,
+      88,
+      89,
+      90
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Cliente",
+    "permissions": [
+      75,
+      74,
+      49,
+      48
+    ]
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "pos",
+    "model": "accountpayable"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "pos",
+    "model": "accountreceivable"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "pos",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "pos",
+    "model": "company"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "pos",
+    "model": "customer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "pos",
+    "model": "expense"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "pos",
+    "model": "expensetype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "pos",
+    "model": "invoice"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "pos",
+    "model": "invoicedetail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "pos",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "pos",
+    "model": "promotion"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "pos",
+    "model": "promotiondetail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "pos",
+    "model": "provider"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "pos",
+    "model": "purchase"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "pos",
+    "model": "purchasedetail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "pos",
+    "model": "quotation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "pos",
+    "model": "quotationdetail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 23,
+  "fields": {
+    "app_label": "pos",
+    "model": "accountpayablepayment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 24,
+  "fields": {
+    "app_label": "pos",
+    "model": "accountreceivablepayment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 25,
+  "fields": {
+    "app_label": "pos",
+    "model": "creditnote"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 26,
+  "fields": {
+    "app_label": "pos",
+    "model": "creditnotedetail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 27,
+  "fields": {
+    "app_label": "security",
+    "model": "dashboard"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 28,
+  "fields": {
+    "app_label": "security",
+    "model": "moduletype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 29,
+  "fields": {
+    "app_label": "security",
+    "model": "useraccess"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 30,
+  "fields": {
+    "app_label": "security",
+    "model": "module"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 31,
+  "fields": {
+    "app_label": "security",
+    "model": "groupmodule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 32,
+  "fields": {
+    "app_label": "user",
+    "model": "user"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0b56fa25jne3mdk84frxaum05mpqpy1m",
+  "fields": {
+    "session_data": ".eJx1kkFvgzAMhf8KyrmDpIVCe1t3nrT7NiGTuJANCErCtqrqf59pGSpae4zf8-dnK0eWQ--rvHdoc63Ylgm2uK4VID-xHQT1AW1pQmlab3URDpZwVF34bBTWu9E7A1TgKupOYr5JU7GK0-USBWR8HReQFRnGiRRriPma87hI9gJhuUoThCxebTLOMy6E5CIhaGlN37HtkQ05xYK10CCRH1WjW-28BWUsOy1Yb-u8BudJizrjIgkeS2MPETEao_oaJwg_u28ZR_jTpfTWc44K3ETI_aGbMMvJvqMzlEAuTWeid6GDQj8U5mfIpdBJqzuvz9IL2kZ7DGCKbwNKHcj5xEBhUBsXdJbmSm_cDTieiw2UQ4TIefBaRropI4V76GsfYdP5Q9i1Jfm6Ya5zFMKx7eu4QHq1cEuRVDAurodlJG01yiTlf2eincb2bNYuK_ooeI9wUW9ANjMIfSf0dyEX9T9kxWeQL43f9xCDdgV4P51-AQa8Agg:1tsOcg:9h5ynRmb0akyCmz1vPxE1xIty_nWUbQ8NJIVsVnTjEo",
+    "expire_date": "2025-03-26T16:07:58.177Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1vo448hepmvpkrno740hfgcf1fg93fgl",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1u27Mk:a4J6UgpFfxSI7uwY3usoNpHkCBSlvz3LJmN9OAqJMPE",
+    "expire_date": "2025-04-22T11:43:42.347Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "50yr2rt82pid8t62hp5bkk55msfm2jna",
+  "fields": {
+    "session_data": ".eJx1kstugzAQRX8FeZ2CTSAh2bVdV-q-qtBgT8EtYMs2fajKv3dICGmUZIfn3nvmIX5ZCUNoysGjK7ViWybY4n-tAvmB_Siod-hrE0vTB6ereLTEk-rjJ6OwfZi8Z4AGfEPpPOOb9Voss3WaooCCr7IKiqrALJdiBRlfcZ5V-ZtASJfrHKHIlpuC84ILIbnICVo7M1i2_WXjnGLBeuiQyPeq0732wYEyju0WbHBt2YIPpCXW-MQ6owYZEkJ09NXizBB78xXfhH4-VIyfo2X4sXM-nY0PtH4N5NJ0HnpXOqr0XWW-0Y8TKfTSaRv0XnxG1-mAEcyDu6g1PrLHbhHdMvKkYHeNOZY6qMe-iQ8QtEx0VycK32BoQ4KdDT-x7Wvy2bGV99TXs-3LYer8dLpH6GkKFR33pISkTSaVlHKaiZaYwulZWDb0T-CN_EG8RCzPELQrhluIg3iJ4GeIT41fNwCjdIq_7nZ_ybX5SA:1ttWSE:ILJyWpsjjtiethRB466S2EYz5yqmvhyQEY_a1fX0GQY",
+    "expire_date": "2025-03-29T18:41:50.329Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5ujyu5regz0szy4m5chw0qk61vr9yed4",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttYXd:S9rkgEADR-7HygYyNjo_klG4AflAIt6a_ZpJKvO4VNI",
+    "expire_date": "2025-03-29T20:55:33.242Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6bs41e4b5mjaqapbesqlnki65vbo1eq2",
+  "fields": {
+    "session_data": ".eJyNkM1ugzAQhF8F-ZyADSYhuTU9V4rUY1Wh9U-IE8CWbaRGEe9em1DUVj30Bp7Zb2b3jmoY_LkenLS1EmiPCFp9f2PAr7KPgrhA3-iU695bxdJoSWfVpS9ayPYwe38AzuDOYbqkeLfdkoJu81wSqPCGMqhYJWnJyQYo3mBMWXkiEvJiW0qoaLGrMK4wIRyTMkAbqweD9ncUe5IV6qGTgfwkOtUr5y0IbdG4QoNt6xacD1pmtMuM1WLgPnNe82sG4jI438neZ4HZBamVC7SYpv8z-BUe32QiZPIaTQux9jezYPPFfghnaiC4VDhj-GcqYWrN9EfsLaTjVhmvJukobacCGpb1bNJql8CU6GLk1Ct-zEW1-03mYP3atMMkdNDEDmEd8IpnqmsyIU8wtD6TnfG31PRN8JkY7Fxo4dD-7bFBSZcVnqFPHqeo59j60eM4lwgIHtac7X9Z0fg-jp_DUNYZ:1tsiEp:Ev6ufju0gwB5wLXgxy02KAGV3d55rBG06gyb0cajuI4",
+    "expire_date": "2025-03-27T13:04:39.396Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7r2qz9hxxfzd412xtvf6pxki2eizhg5e",
+  "fields": {
+    "session_data": ".eJx1kstugzAQRX8FeZ2CTSAh2bVdV-q-qtBgT8EtYMs2fajKv3dICGmUZIfn3nvmIX5ZCUNoysGjK7ViWybY4n-tAvmB_Siod-hrE0vTB6ereLTEk-rjJ6OwfZi8Z4AGfEPpPOOb9Voss3WaooCCr7IKiqrALJdiBRlfcZ5V-ZtASJfrHKHIlpuC84ILIbnICVo7M1i2_WXjnGLBeuiQyPeq0732wYEyju0WbHBt2YIPpCXW-MQ6owYZEkJ09NXizBB78xXfhH4-VIyfo2X4sXM-nY0PtH4N5NJ0HnpXOqr0XWW-0Y8TKfTSaRv0XnxG1-mAEcyDu6g1PrLHbhHdMvKkYHeNOZY6qMe-iQ8QtEx0VycK32BoQ4KdDT-x7Wvy2bGV99TXs-3LYer8dLpH6GkKFR33pISkTSaVlHKaiZaYwulZWDb0T-CN_EG8RCzPELQrhluIg3iJ4GeIT41fNwCjdIq_7nZ_ybX5SA:1ttWLt:tMHuM5_hvQqWGg8iqJPBpQtJIrK9g0RqSrmsju07WCM",
+    "expire_date": "2025-03-29T18:35:17.133Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dvlcevmuzanp55gjcuqqunm8lspnd228",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1tsHRE:fE_UVNbl8inXWa7FZMhcE28BRENff0V9280isk-03BM",
+    "expire_date": "2025-03-26T08:27:40.853Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "g8bd38oyo7krqnnqyree5b8vux9uwoer",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1u273W:TdKLTKPGQpMChz-vawjl1zPvYwaVxLOjit60E5E1Qhs",
+    "expire_date": "2025-04-22T11:23:50.140Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k5ii1rakt2x79d9cme1ndc1idb1cnyes",
+  "fields": {
+    "session_data": ".eJyFkkFv2zAMhf-KoHNqS4ntuLm1PRfYfRgMSmIdbbYkSHKGosh_L50YabMVzZV8_Pj4wDfewZT33ZQwdtbwHZd89bmmQP9BNzfMb3C9L7R3OVpVzJJi6abi2RscHhftFWAPaU_TdSXut1u5qbbrNUpoRVMpaFWLVa1lA5VohKhU_SIR1pttjdBWm_tWiFZIqYWsCdpHPwW-e-OzT7niDkYk8oMZrbMpRzA-8uOKT3HoBkiZemXwqQSt_eRyGVGjPYAasCTa6M004AXXnOa-H1kWPk3oMiQWfGTaqwjxguvya7gwN19YzPbgSW0pRaory5S905TQnfbWzeYNJh1tyPYk-IFxtBkZXACR0WlM_2eBGWSDp85gqYXp3yWnS0KeyyP0s6kyZbKjSzv2pcEXmIZc4hjyaxFcT7ow706JjCS--3k-aV1_pACObBl2TuM6DE3fsMhI0i1pdh9p0qULsLkC0hMhnXuDeVZ9i62usAeLf29BZ82XyF_H4ztIaA_N:1ttWPZ:BDUqEAKG3X35ewM_ptihUH_niwPYDbPkOJWTHhSM5LQ",
+    "expire_date": "2025-03-29T18:39:05.984Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ldol2nbt3lrnld46zwzriu1fhj0uskz4",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttVrH:eNBqJ66InZ0gxdUvnyu7ffRHnmBwvZ0RRZUM6JJT-8g",
+    "expire_date": "2025-03-29T18:03:39.571Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lrz4id8ezykjy2ujtfp21vnoi4miot0z",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttPPg:jvsk189l5RdWn0_ZKZZcoZkdGzO85z_nFzJButH2Mjc",
+    "expire_date": "2025-03-29T11:10:44.742Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mehkrv0pvbz1f89mwjjdd26euov3nz4r",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttVYM:jssXa-SyXzrxO8FD15PGxCpT52HCCIovzlTpi9_HRRU",
+    "expire_date": "2025-03-29T17:44:06.600Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "n4b0ymx4yjz28nawip9w7l4qxifmxrly",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttNzE:mWqZJfutrBBkUkBehyEjyPxIMN9Jsk4OLLlmKIjpwYo",
+    "expire_date": "2025-03-29T09:39:20.982Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nztswq0i8vsdnxqufmba6xl4fzqskouw",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttXeY:hu6f9etpe3gSc16ylZoIEGaeeSf82PB8aFZyVXJ8IuM",
+    "expire_date": "2025-03-29T19:58:38.127Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o5g5hvr8ss7xjsm5fjporgeonpnxcgn2",
+  "fields": {
+    "session_data": ".eJx1kstugzAQRX8FeZ2CTSAh2bVdV-q-qtBgT8EtYMs2fajKv3dICGmUZIfn3nvmIX5ZCUNoysGjK7ViWybY4n-tAvmB_Siod-hrE0vTB6ereLTEk-rjJ6OwfZi8Z4AGfEPpPOOb9Voss3WaooCCr7IKiqrALJdiBRlfcZ5V-ZtASJfrHKHIlpuC84ILIbnICVo7M1i2_WXjnGLBeuiQyPeq0732wYEyju0WbHBt2YIPpCXW-MQ6owYZEkJ09NXizBB78xXfhH4-VIyfo2X4sXM-nY0PtH4N5NJ0HnpXOqr0XWW-0Y8TKfTSaRv0XnxG1-mAEcyDu6g1PrLHbhHdMvKkYHeNOZY6qMe-iQ8QtEx0VycK32BoQ4KdDT-x7Wvy2bGV99TXs-3LYer8dLpH6GkKFR33pISkTSaVlHKaiZaYwulZWDb0T-CN_EG8RCzPELQrhluIg3iJ4GeIT41fNwCjdIq_7nZ_ybX5SA:1ttWi2:ot6yFsMDEWB10YQ0AffBBpUnwl3p5GX-XY1xHbfVy3w",
+    "expire_date": "2025-03-29T18:58:10.171Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qvxekxq66p77okzlhwqefxbmp8012oe7",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttNyO:CxNUTVYdyxOnY6PfRR8a1_AtA0zyRlONyvacxEUKHf4",
+    "expire_date": "2025-03-29T09:38:28.102Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qy4r5ujim3b4qclnuiqc16nmbz49z3w9",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1u2736:KcYGGUnwE3NRl6aBdopmKp_Z-hbLbEiBbRftinxr5k0",
+    "expire_date": "2025-04-22T11:23:24.242Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rk4nbeedweok38rqr6nqln1we6708l7j",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1ttVYd:zc4cyDQLnc9JOs0FVC0mq13yxGxla9s2xQERrk_zFCI",
+    "expire_date": "2025-03-29T17:44:23.899Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s0erdpmjg2tr4utapefhh9g6p6qbstjr",
+  "fields": {
+    "session_data": ".eJx1ks2umzAQhV8FeZ2CnUAg2bWVuqvUfVuhwZ4Q34Jt-SfV1VXevUMupSVKVkg-53wzx_iNtZDiuU0BfasVOzLBNv-fdSB_oZkE9QKmt7m0Jnrd5ZMln9WQf7UKh0-zdwU4QzhTuir5oa7Frqy3WxTQ8H3ZQdM1WFZS7KHke87LrjoJhO2urhCacndoOG-4EJKLiqC9t8mx4xub9hQbZmBEIn9UozY6RA_KenbdsOSHdoAQSSucDYU2F6slFjAZCwKNVqUBF9LhFnnqnsd8ARmTh7Dk2_jqFkh575P6R-L8tDPk13RnpHQ66_QHCYNMA8T3XRUG6bWL-ub4hn7UETNYKvmMmmQXNJE-CrPBhsx5mi-jDfdoh9ZRLzodoZ92KUKEqGWhx75QeII0xAJHF19zZ3ryuWleCDQ8sOP3uUm1VPkMhlZR2VyJApJ-8yyS0M531d72pTozYb8iJKeAOj2EyDO9KXzGqVccemD4jPOuPeMcVhzntYmPMTfpL-VfvlzlLxp_P45Pyv0OP6_XP97HIR8:1ttR75:WDL0hsQt9uZrbtrCnmX4JnUUYPsj5d_ULOB05_yhA-g",
+    "expire_date": "2025-03-29T12:59:39.218Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sf3i67814xpvmjpxn36qzsfjm8ar2s8y",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1tsHQD:OcXg6ZhUWNU44lzv9Yre-pUlp9UcCz4F5nxiGPwFqHk",
+    "expire_date": "2025-03-26T08:26:37.372Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "w3lzt4qnaaa8zae3yer66hsbpaxxucnp",
+  "fields": {
+    "session_data": ".eJx1ks2umzAQhV8FeZ2CnUAg2bWVuqvUfVuhwZ4Q34Jt-SfV1VXevUMupSVKVkg-53wzx_iNtZDiuU0BfasVOzLBNv-fdSB_oZkE9QKmt7m0Jnrd5ZMln9WQf7UKh0-zdwU4QzhTuir5oa7Frqy3WxTQ8H3ZQdM1WFZS7KHke87LrjoJhO2urhCacndoOG-4EJKLiqC9t8mx4xub9hQbZmBEIn9UozY6RA_KenbdsOSHdoAQSSucDYU2F6slFjAZCwKNVqUBF9LhFnnqnsd8ARmTh7Dk2_jqFkh575P6R-L8tDPk13RnpHQ66_QHCYNMA8T3XRUG6bWL-ub4hn7UETNYKvmMmmQXNJE-CrPBhsx5mi-jDfdoh9ZRLzodoZ92KUKEqGWhx75QeII0xAJHF19zZ3ryuWleCDQ8sOP3uUm1VPkMhlZR2VyJApJ-8yyS0M531d72pTozYb8iJKeAOj2EyDO9KXzGqVccemD4jPOuPeMcVhzntYmPMTfpL-VfvlzlLxp_P45Pyv0OP6_XP97HIR8:1ttPPS:AjtEa1-Iu3HfMX-5iw9MBA_qaEL18FLqco6KJkbMXPA",
+    "expire_date": "2025-03-29T11:10:30.298Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wxa63vf1yls6dx23elq5lg1szpit5qc8",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1ttXMH:oqwd__PY8MrcaNP0hbSrsg6jvZlGwwCfv_yZj3dS5dA",
+    "expire_date": "2025-03-29T19:39:45.936Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xievf82l9qvl6ttoiur31a9gou0ile1u",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1ttVde:90LFB-kgTRnath50fLO14ezjfTxarm1iYl9fu0ArtEM",
+    "expire_date": "2025-03-29T17:49:34.926Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yu96x06d3shemfbdry1buzaapghwxvnq",
+  "fields": {
+    "session_data": ".eJxVjjsOgzAQRO_iGlm7YGNDl_Q5A1p_As7HjmyoEHcPSBRJO2_maVY20DJPw1J8HoJjPUNW_WaG7NPHA7gHxTFxm-Kcg-FHhZ-08Fty_nU9u3-Cicq0r6WATilshKprj6ShFYa00V5Iiy0JaAGEkXf0VDdKetKi6TSABkQLKHfpmNPyYf3Kjp9YsUhvv5sv7h1iKHMmlzLbti8L3UMu:1ttWij:5BfhLUBrncex4Dgv1XKXYdZpKGjB4ge9VCTwm9NmIL8",
+    "expire_date": "2025-03-29T18:58:53.984Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "za2cxj1fhgbmfibf9y6jd9tlemh3xg6t",
+  "fields": {
+    "session_data": ".eJx1kstugzAQRX8FeZ2CTSAh2bVdV-q-qtBgT8EtYMs2fajKv3dICGmUZIfn3nvmIX5ZCUNoysGjK7ViWybY4n-tAvmB_Siod-hrE0vTB6ereLTEk-rjJ6OwfZi8Z4AGfEPpPOOb9Voss3WaooCCr7IKiqrALJdiBRlfcZ5V-ZtASJfrHKHIlpuC84ILIbnICVo7M1i2_WXjnGLBeuiQyPeq0732wYEyju0WbHBt2YIPpCXW-MQ6owYZEkJ09NXizBB78xXfhH4-VIyfo2X4sXM-nY0PtH4N5NJ0HnpXOqr0XWW-0Y8TKfTSaRv0XnxG1-mAEcyDu6g1PrLHbhHdMvKkYHeNOZY6qMe-iQ8QtEx0VycK32BoQ4KdDT-x7Wvy2bGV99TXs-3LYer8dLpH6GkKFR33pISkTSaVlHKaiZaYwulZWDb0T-CN_EG8RCzPELQrhluIg3iJ4GeIT41fNwCjdIq_7nZ_ybX5SA:1ttWlr:0n1rj2YC8c-nHmwD7M8pHKW5eZgjy8DgJQ61xXwPGJA",
+    "expire_date": "2025-03-29T19:02:07.862Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zs0tantjp4609g59th2a5t1omm9cl3gs",
+  "fields": {
+    "session_data": ".eJxlkc1u2zAQhF-F4NmRSIuyZd-SArkFMRAgl7YQVuRaZkpRArl04AZ-91KJ6_TnuvPNzHL5xltIdGhTxNBaw7dc8sWfsw70D_SzYF7A92OhR0_BdsWMFBc1Fg-jQXd3Yf8KOEA8ZHetxGa9lpVaL5cooREr1UHTNahqLVegxEoI1dV7ibCs1jVCo6pNI0QjpNRC1jm0D2Oa-PaNz3vKBfcwYE6-NYP1NlIAMwZ-XvAUXOsgUtbKaYwlTccy24fRJIe__ZV6B_9hLpG75GlkBtkzeoKrt6XTdA1QV_oeNKUA2n5LQuwrn3mbr5SVzrLO3mhwOjmgj-0MRh3sRPad2GEYLCELCM7-hMCOc2Nk6Bk6FvOzcID_AwPNswH6ub-MBGR1aYe-NLiH5KjEYaJTMfk-c9PcEWMujHz79WP7zef9voBnR4uvbPf4lGmdf_KizNM2X4efv5_PvwBZT7UZ:1tzYSR:58hR8wV6VQtTRq-9aQSd-nc4KBUCxUUs20WGXSv54us",
+    "expire_date": "2025-04-15T10:02:59.615Z"
+  }
+},
+{
+  "model": "pos.company",
+  "pk": 1,
+  "fields": {
+    "ruc": "B19743590",
+    "name": "CANTABRIA REVALORA SL",
+    "address": "CALLE REPUENTE 54A",
+    "image": "company/2025/03/13/Logo_Azul_Vertical-100.jpg",
+    "favicon": "company/favicon/2025/03/15/favicon.ico.ico",
+    "mobile": "614127529",
+    "phone": "614127529",
+    "email": "hola@revalora.com",
+    "website": "https://revalora.com",
+    "description": "Almacén de devoluciones de Amazon",
+    "establishment_code": "000",
+    "issuing_point_code": "000",
+    "tax": "21.00",
+    "email_host": "smtp.gmail.com",
+    "email_port": 587,
+    "email_host_user": "netdev@in-planet.net",
+    "email_host_password": "llylnrfzcsvykyyl"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 1,
+  "fields": {
+    "name": "Corporación Favorita",
+    "ruc": "1790174562",
+    "mobile": "0987654321",
+    "address": "Av. de los Shyris 195, Quito",
+    "email": "contacto@favorita.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 2,
+  "fields": {
+    "name": "Distribuidora Nacional de Alimentos",
+    "ruc": "1790165789",
+    "mobile": "0998765432",
+    "address": "Calle 9 de Octubre 750, Guayaquil",
+    "email": "ventas@dnalimentos.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 3,
+  "fields": {
+    "name": "Supermercados Tía",
+    "ruc": "1790178294",
+    "mobile": "0986543210",
+    "address": "Av. Francisco de Orellana, Guayaquil",
+    "email": "proveedores@tia.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 4,
+  "fields": {
+    "name": "Café San Blas",
+    "ruc": "1790154321",
+    "mobile": "0984321098",
+    "address": "Calle Bolívar 125, Loja",
+    "email": "contacto@cafesanblas.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 5,
+  "fields": {
+    "name": "La Fabril",
+    "ruc": "1790164567",
+    "mobile": "0993210987",
+    "address": "Av. Juan Tanca Marengo, Guayaquil",
+    "email": "ventas@lafabril.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 6,
+  "fields": {
+    "name": "Industrias Lácteas San Juan",
+    "ruc": "1790171234",
+    "mobile": "0972109876",
+    "address": "Calle José Mascote 250, Quito",
+    "email": "contacto@sanjuanleche.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 7,
+  "fields": {
+    "name": "Petroamazonas",
+    "ruc": "1790198765",
+    "mobile": "0982109876",
+    "address": "Av. Amazonas 800, Quito",
+    "email": "info@petroamazonas.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 8,
+  "fields": {
+    "name": "Cervecería Nacional",
+    "ruc": "1790167898",
+    "mobile": "0971098765",
+    "address": "Calle Jacinto de la Peña, Guayaquil",
+    "email": "proveedores@cerveceria.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 9,
+  "fields": {
+    "name": "Alpina Ecuador",
+    "ruc": "1790189876",
+    "mobile": "0987654320",
+    "address": "Av. América 950, Quito",
+    "email": "contacto@alpina.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 10,
+  "fields": {
+    "name": "Ferroaluminio",
+    "ruc": "1790178765",
+    "mobile": "0998321098",
+    "address": "Calle Norte 400, Ambato",
+    "email": "contacto@ferroaluminio.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 11,
+  "fields": {
+    "name": "Arcos Dorados",
+    "ruc": "1790159876",
+    "mobile": "0972108765",
+    "address": "Av. de la Prensa 75, Quito",
+    "email": "ventas@arcosdorados.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 12,
+  "fields": {
+    "name": "Aceites Naranjo",
+    "ruc": "1790176543",
+    "mobile": "0987651209",
+    "address": "Calle 24 de Mayo 700, Guayaquil",
+    "email": "info@aceitesnaranjo.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 13,
+  "fields": {
+    "name": "La Universal",
+    "ruc": "1790172345",
+    "mobile": "0986541098",
+    "address": "Calle de la 6 de Diciembre, Guayaquil",
+    "email": "ventas@launiversal.com"
+  }
+},
+{
+  "model": "pos.provider",
+  "pk": 14,
+  "fields": {
+    "name": "Maresa Ecuador",
+    "ruc": "1790198745",
+    "mobile": "0988765432",
+    "address": "Calle Pérez Guerrero 130, Quito",
+    "email": "informes@maresa.com"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 1,
+  "fields": {
+    "name": "LOCAL"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 2,
+  "fields": {
+    "name": "BODEGA 3"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 3,
+  "fields": {
+    "name": "BODEGA 4"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 4,
+  "fields": {
+    "name": "BODEGA 1"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 5,
+  "fields": {
+    "name": "BODEGA 2 AL FONDO"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 6,
+  "fields": {
+    "name": "BODEGA 3 AL FONDO"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 7,
+  "fields": {
+    "name": "SANTANDER"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 8,
+  "fields": {
+    "name": "Cooking Utensils"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 9,
+  "fields": {
+    "name": "Candlestick"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 10,
+  "fields": {
+    "name": "Cookware Sets"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 11,
+  "fields": {
+    "name": "Dutch Ovens"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 12,
+  "fields": {
+    "name": "Sewing Machines"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 13,
+  "fields": {
+    "name": "Accessory & Decoration"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 14,
+  "fields": {
+    "name": "Kitchen Storage & Organization"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 15,
+  "fields": {
+    "name": "Bakeware Tools & Accessories"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 16,
+  "fields": {
+    "name": "Collectibles"
+  }
+},
+{
+  "model": "pos.category",
+  "pk": 17,
+  "fields": {
+    "name": "Tools, Gadgets & Barware Other"
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 1,
+  "fields": {
+    "name": "BORRADOR GRANDE PZ 20",
+    "code": "7703064446502",
+    "description": null,
+    "category": 1,
+    "price": "0.2200",
+    "pvp": "0.2500",
+    "image": "",
+    "barcode": "barcode/2025/03/15/7703064446502_YOOu7XJ.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 30,
+  "fields": {
+    "name": "CANDANDO MINI",
+    "code": "6322255306305",
+    "description": null,
+    "category": 1,
+    "price": "0.7400",
+    "pvp": "0.8500",
+    "image": "",
+    "barcode": "barcode/2025/03/15/6322255306305_jrif7Lf.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": -5,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 39,
+  "fields": {
+    "name": "Caso, VacuChef 70, macchina per sottovuoto con camera in acciaio inox, potente pompa per sottovuoto da 70 litri/minuto, doppia saldatura, tempo di aspirazione e saldatura regolabile",
+    "code": "LPNA045610634",
+    "description": null,
+    "category": 8,
+    "price": "388.9000",
+    "pvp": "388.9000",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA045610634.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 4,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 40,
+  "fields": {
+    "name": "Planika Faro - Patio Gas Riscaldatore nero, portatile e autonomo, riscaldatore decorativo a propano per il tuo giardino e la tua terrazza",
+    "code": "LPNA046133002",
+    "description": null,
+    "category": 9,
+    "price": "275.0000",
+    "pvp": "275.0000",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA046133002_OMWCgmF.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 1,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 41,
+  "fields": {
+    "name": "Planika Faro - Patio Gas Riscaldatore nero, portatile e autonomo, riscaldatore decorativo a propano per il tuo giardino e la tua terrazza",
+    "code": "LPNA046133001",
+    "description": null,
+    "category": 9,
+    "price": "275.0000",
+    "pvp": "275.0000",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA046133001.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 42,
+  "fields": {
+    "name": "Planika Faro - Patio Gas Riscaldatore nero, portatile e autonomo, riscaldatore decorativo a propano per il tuo giardino e la tua terrazza",
+    "code": "LPNHE828529853",
+    "description": null,
+    "category": 9,
+    "price": "275.0000",
+    "pvp": "275.0000",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNHE828529853.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 43,
+  "fields": {
+    "name": "Le Creuset Set de 3 Casseroles Anti-Adhâ€šÃ Ã¶Â¬Â©rentes en Aluminium Forgâ€šÃ Ã¶Â¬Â©, 16, 18 et 20 cm, Anthracite/Argentâ€šÃ Ã¶Â¬Â©,51803000010002",
+    "code": "LPNA045556987",
+    "description": null,
+    "category": 10,
+    "price": "253.4700",
+    "pvp": "253.4700",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA045556987.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 44,
+  "fields": {
+    "name": "STAUB La Cocotte Casseruola, Ghisa, Nero, 34 cm",
+    "code": "LPNHE828448105",
+    "description": null,
+    "category": 11,
+    "price": "229.6500",
+    "pvp": "229.6500",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNHE828448105.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 45,
+  "fields": {
+    "name": "Bernette Sew&Go8 Macchina da cucire Elettronica con 197 punti cucito",
+    "code": "LPNA045826760",
+    "description": null,
+    "category": 12,
+    "price": "228.9200",
+    "pvp": "228.9200",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA045826760.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 46,
+  "fields": {
+    "name": "Nemesis Now Licenza Ufficiale The Joker e Harley Quinn Bust, Multicolore, 37,5 cm, Resina, 37.5cm",
+    "code": "LPNHE828332071",
+    "description": null,
+    "category": 13,
+    "price": "99.3400",
+    "pvp": "99.3400",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNHE828332071.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 47,
+  "fields": {
+    "name": "Paderno 41583-00 Ferma Prosciutto, Base in Marmo",
+    "code": "LPNHE828581219",
+    "description": null,
+    "category": 14,
+    "price": "152.0600",
+    "pvp": "152.0600",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNHE828581219.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 48,
+  "fields": {
+    "name": "Philips Hue Play Gradient Light Tube, Tubo Luminoso LED Smart, per Tv da 40\"-55\", Nero",
+    "code": "LPNA045763768",
+    "description": null,
+    "category": 15,
+    "price": "185.9200",
+    "pvp": "185.9200",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA045763768.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 49,
+  "fields": {
+    "name": "Le Creuset Signature Gusseisen-Brâ€šÃ Ã¶Â¬ÃŸter mit Deckel, â€šÃ Ã¶âˆšâ‰¤ 24 cm, Rund, Fâ€šÃ Ã¶Â¬âˆ«r alle Herdarten und Induktion geeignet, Volumen: 4,2 l, 4,305 kg, Ofenrot, 21177240902430",
+    "code": "LPNHE828339003",
+    "description": null,
+    "category": 11,
+    "price": "173.4200",
+    "pvp": "173.4200",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNHE828339003.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 50,
+  "fields": {
+    "name": "Planika BINO Camino a gas da esterno - Riscaldatore portatile per giardino e terrazza, Esterno da Balcone con Copertura",
+    "code": "LPNA045809632",
+    "description": null,
+    "category": 16,
+    "price": "221.0000",
+    "pvp": "221.0000",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNA045809632.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.product",
+  "pk": 51,
+  "fields": {
+    "name": "Graef Vivo V 20 Affettatrice, Acciaio Inossidabile, Argento",
+    "code": "LPNHE828346026",
+    "description": null,
+    "category": 17,
+    "price": "148.1500",
+    "pvp": "148.1500",
+    "image": "",
+    "barcode": "barcode/2025/03/15/LPNHE828346026.png",
+    "is_inventoried": true,
+    "is_featured": false,
+    "stock": 0,
+    "has_tax": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "dni": "9999999999",
+    "mobile": "0999999999",
+    "birthdate": "2003-05-13",
+    "address": "ECUADOR",
+    "send_email_invoice": false
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "dni": "1754696373",
+    "mobile": "0991652268",
+    "birthdate": "2003-05-13",
+    "address": "PARQUE ARTESANAL ULTIMA MANZANA",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "dni": "0401325345",
+    "mobile": "0969941191",
+    "birthdate": "2001-10-01",
+    "address": "GERÓNIMO CARRION Y COLON",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "dni": "0400958609",
+    "mobile": "0960073020",
+    "birthdate": "2005-01-10",
+    "address": "AV. ANDRES BELLO Y CARLOS ONA",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 5,
+  "fields": {
+    "user": 6,
+    "dni": "0401977327",
+    "mobile": "0987610731",
+    "birthdate": "1999-10-01",
+    "address": "CONJUNTO EL ROSAL",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 6,
+  "fields": {
+    "user": 7,
+    "dni": "0401294400",
+    "mobile": "0992019695",
+    "birthdate": "2001-12-15",
+    "address": "OLMEDO Y LAS GRADAS",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 7,
+  "fields": {
+    "user": 8,
+    "dni": "0401256409",
+    "mobile": "0983626601",
+    "birthdate": "1996-10-02",
+    "address": "OLMEDO Y CARABOBO",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 8,
+  "fields": {
+    "user": 9,
+    "dni": "0402038418",
+    "mobile": "0981776307",
+    "birthdate": "1998-02-15",
+    "address": "POLICIA",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 9,
+  "fields": {
+    "user": 10,
+    "dni": "1713379970",
+    "mobile": "0991728843",
+    "birthdate": "2005-02-01",
+    "address": "GRAL PLAZA Y JOSE MARIA URBINA",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 10,
+  "fields": {
+    "user": 11,
+    "dni": "1713841763",
+    "mobile": "0980513332",
+    "birthdate": "2004-09-06",
+    "address": "PANAMÁ Y OLMEDO",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 11,
+  "fields": {
+    "user": 12,
+    "dni": "0401478417",
+    "mobile": "0960752910",
+    "birthdate": "1999-09-01",
+    "address": "ANTISANA PULIDA Y MAGDALENA",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 12,
+  "fields": {
+    "user": 13,
+    "dni": "0402082986",
+    "mobile": "0967164429",
+    "birthdate": "1995-03-13",
+    "address": "CALLE MANUEL YEPEZ CASA COLOR BLANCO",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 13,
+  "fields": {
+    "user": 14,
+    "dni": "0401488952",
+    "mobile": "0939911099",
+    "birthdate": "1995-10-02",
+    "address": "TULCÁN /AV. VENTIMILLA Y ALEJANDRO R.MERA",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 14,
+  "fields": {
+    "user": 15,
+    "dni": "0400875613",
+    "mobile": "0980601552",
+    "birthdate": "1999-10-12",
+    "address": "TUNGURAHUA Y 10 DE AGOSTO",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 15,
+  "fields": {
+    "user": 16,
+    "dni": "0401624176",
+    "mobile": "0991133675",
+    "birthdate": "1998-09-03",
+    "address": "CDLA. PADRE CARLOS DE LA VEGA - MANUEL MACHADO Y JORGE MANRIQUE",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 16,
+  "fields": {
+    "user": 17,
+    "dni": "0401497185",
+    "mobile": "0991571113",
+    "birthdate": "2000-03-10",
+    "address": "EL ROSARIO REGISTRO CIVIL",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 17,
+  "fields": {
+    "user": 18,
+    "dni": "0401641378",
+    "mobile": "0994541825",
+    "birthdate": "1996-03-02",
+    "address": "ANDRES BELLO",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 18,
+  "fields": {
+    "user": 19,
+    "dni": "0402075162",
+    "mobile": "0985880436",
+    "birthdate": "1998-11-11",
+    "address": "MALDONADO Y CARABOBO ",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 19,
+  "fields": {
+    "user": 20,
+    "dni": "0402037238",
+    "mobile": "0969531603",
+    "birthdate": "1997-01-10",
+    "address": "COLON Y ORIENTE",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 20,
+  "fields": {
+    "user": 21,
+    "dni": "0401054077",
+    "mobile": "0958871303",
+    "birthdate": "1999-08-08",
+    "address": "CALLE ARGENTINA TRAS DEL COLEGIO BOLIVAR",
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.customer",
+  "pk": 21,
+  "fields": {
+    "user": 22,
+    "dni": "X5501890Z",
+    "mobile": "635767124",
+    "birthdate": "2025-03-13",
+    "address": null,
+    "send_email_invoice": true
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 1,
+  "fields": {
+    "name": "AGUA"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 2,
+  "fields": {
+    "name": "ELECTRICIDAD"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 3,
+  "fields": {
+    "name": "GAS"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 4,
+  "fields": {
+    "name": "ALQUILER"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 5,
+  "fields": {
+    "name": "TELÉFONO"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 6,
+  "fields": {
+    "name": "INTERNET"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 7,
+  "fields": {
+    "name": "SALARIOS"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 8,
+  "fields": {
+    "name": "COMBUSTIBLE"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 9,
+  "fields": {
+    "name": "MANTENIMIENTO"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 10,
+  "fields": {
+    "name": "SUMINISTROS"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 11,
+  "fields": {
+    "name": "TRANSPORTE"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 12,
+  "fields": {
+    "name": "SEGURIDAD"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 13,
+  "fields": {
+    "name": "SEGUROS"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 14,
+  "fields": {
+    "name": "PUBLICIDAD"
+  }
+},
+{
+  "model": "pos.expensetype",
+  "pk": 15,
+  "fields": {
+    "name": "OFICINA"
+  }
+},
+{
+  "model": "pos.expense",
+  "pk": 1,
+  "fields": {
+    "expense_type": 2,
+    "description": "s/n",
+    "date_joined": "2025-03-15",
+    "amount": "25.00"
+  }
+},
+{
+  "model": "pos.invoice",
+  "pk": 7,
+  "fields": {
+    "receipt_number": "000000007",
+    "receipt_number_full": "000-000-000000007",
+    "company": 1,
+    "date_joined": "2025-03-15",
+    "time_joined": "2025-03-15T20:17:05.795Z",
+    "subtotal_without_tax": "0.00",
+    "subtotal_with_tax": "0.25",
+    "tax": "0.21",
+    "total_tax": "0.05",
+    "total_discount": "0.00",
+    "total_amount": "0.30",
+    "customer": 21,
+    "employee": 1,
+    "payment_type": "efectivo",
+    "end_credit": "2025-03-15",
+    "cash": "0.00",
+    "change": "0.00",
+    "is_draft_invoice": false,
+    "status": "canceled"
+  }
+},
+{
+  "model": "pos.invoice",
+  "pk": 18,
+  "fields": {
+    "receipt_number": "000000009",
+    "receipt_number_full": "000-000-000000009",
+    "company": 1,
+    "date_joined": "2025-03-15",
+    "time_joined": "2025-03-15T23:38:02.735Z",
+    "subtotal_without_tax": "0.00",
+    "subtotal_with_tax": "0.85",
+    "tax": "0.21",
+    "total_tax": "0.18",
+    "total_discount": "0.00",
+    "total_amount": "1.03",
+    "customer": 4,
+    "employee": 1,
+    "payment_type": "credito",
+    "end_credit": "2025-03-15",
+    "cash": "0.00",
+    "change": "0.00",
+    "is_draft_invoice": false,
+    "status": "authorized"
+  }
+},
+{
+  "model": "pos.invoicedetail",
+  "pk": 7,
+  "fields": {
+    "product": 1,
+    "quantity": 1,
+    "price": "0.2500",
+    "price_with_tax": "0.3025",
+    "subtotal": "0.2500",
+    "tax": "0.2100",
+    "total_tax": "0.0525",
+    "discount": "0.0000",
+    "total_discount": "0.0000",
+    "total_amount": "0.2500",
+    "invoice": 7
+  }
+},
+{
+  "model": "pos.invoicedetail",
+  "pk": 18,
+  "fields": {
+    "product": 30,
+    "quantity": 1,
+    "price": "0.8500",
+    "price_with_tax": "1.0285",
+    "subtotal": "0.8500",
+    "tax": "0.2100",
+    "total_tax": "0.1785",
+    "discount": "0.0000",
+    "total_discount": "0.0000",
+    "total_amount": "1.0285",
+    "invoice": 18
+  }
+},
+{
+  "model": "pos.accountreceivable",
+  "pk": 3,
+  "fields": {
+    "invoice": 18,
+    "date_joined": "2025-03-15",
+    "end_date": "2025-03-15",
+    "debt": "1.03",
+    "balance": "1.03",
+    "active": true
+  }
+},
+{
+  "model": "pos.creditnote",
+  "pk": 1,
+  "fields": {
+    "receipt_number": "000000001",
+    "receipt_number_full": "000-000-000000001",
+    "company": 1,
+    "date_joined": "2025-03-15",
+    "time_joined": "2025-03-15T21:15:16.619Z",
+    "subtotal_without_tax": "0.00",
+    "subtotal_with_tax": "0.25",
+    "tax": "0.21",
+    "total_tax": "0.05",
+    "total_discount": "0.00",
+    "total_amount": "0.30",
+    "invoice": 7,
+    "motive": "NOTA DE CREDITO DE LA VENTA 000-000-000000007",
+    "is_draft_invoice": false,
+    "status": "authorized"
+  }
+},
+{
+  "model": "pos.creditnotedetail",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "quantity": 1,
+    "price": "0.2500",
+    "price_with_tax": "0.3025",
+    "subtotal": "0.2500",
+    "tax": "0.2100",
+    "total_tax": "0.0525",
+    "discount": "0.0000",
+    "total_discount": "0.0000",
+    "total_amount": "0.2500",
+    "credit_note": 1,
+    "invoice_detail": 7
+  }
+},
+{
+  "model": "pos.quotation",
+  "pk": 4,
+  "fields": {
+    "receipt_number": "000000001",
+    "receipt_number_full": "000-000-000000001",
+    "company": 1,
+    "date_joined": "2025-03-06",
+    "time_joined": "2025-03-15T19:25:42.534Z",
+    "subtotal_without_tax": "0.00",
+    "subtotal_with_tax": "0.25",
+    "tax": "0.21",
+    "total_tax": "0.05",
+    "total_discount": "0.00",
+    "total_amount": "0.30",
+    "customer": 21,
+    "employee": 1,
+    "active": true
+  }
+},
+{
+  "model": "pos.quotationdetail",
+  "pk": 4,
+  "fields": {
+    "product": 1,
+    "quantity": 1,
+    "price": "0.2500",
+    "price_with_tax": "0.3025",
+    "subtotal": "0.2500",
+    "tax": "0.2100",
+    "total_tax": "0.0525",
+    "discount": "0.0000",
+    "total_discount": "0.0000",
+    "total_amount": "0.2500",
+    "quotation": 4
+  }
+},
+{
+  "model": "security.dashboard",
+  "pk": 1,
+  "fields": {
+    "name": "Revalora",
+    "author": "Revalora",
+    "footer_url": "https://revalora.com",
+    "image": "dashboard/2025/03/11/logo.png",
+    "icon": "fas fa-shopping-cart",
+    "layout": 1,
+    "card": " ",
+    "navbar": "navbar-dark navbar-navy",
+    "brand_logo": " ",
+    "sidebar": "sidebar-dark-navy"
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 1,
+  "fields": {
+    "name": "Seguridad",
+    "icon": "bi bi-shield-lock"
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 2,
+  "fields": {
+    "name": "Bodega",
+    "icon": "bi bi-boxes"
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 3,
+  "fields": {
+    "name": "Administrativo",
+    "icon": "bi bi-cash-coin"
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 4,
+  "fields": {
+    "name": "Facturación",
+    "icon": "bi bi-calculator"
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 5,
+  "fields": {
+    "name": "Reportes",
+    "icon": "bi bi-pie-chart"
+  }
+},
+{
+  "model": "security.module",
+  "pk": 1,
+  "fields": {
+    "url": "/security/module/type/",
+    "name": "Tipos de Módulos",
+    "module_type": 1,
+    "description": "Permite administrar los tipos de módulos del sistema",
+    "icon": "bi bi-door-open",
+    "image": "",
+    "permissions": [
+      78,
+      79,
+      80,
+      77
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 2,
+  "fields": {
+    "url": "/security/module/",
+    "name": "Módulos",
+    "module_type": 1,
+    "description": "Permite administrar los módulos del sistema",
+    "icon": "bi bi-grid",
+    "image": "",
+    "permissions": [
+      83,
+      84,
+      85,
+      86
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 3,
+  "fields": {
+    "url": "/security/group/",
+    "name": "Grupos",
+    "module_type": 1,
+    "description": "Permite administrar los grupos de usuarios del sistema",
+    "icon": "bi bi-people",
+    "image": "",
+    "permissions": [
+      9,
+      10,
+      11,
+      12
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 4,
+  "fields": {
+    "url": "/security/dashboard/update/",
+    "name": "Conf. Dashboard",
+    "module_type": 1,
+    "description": "Permite configurar los datos de la plantilla",
+    "icon": "bi bi-tools",
+    "image": "",
+    "permissions": [
+      76
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 5,
+  "fields": {
+    "url": "/security/user/access/",
+    "name": "Accesos",
+    "module_type": 1,
+    "description": "Permite administrar los accesos de los usuarios",
+    "icon": "bi bi-person-fill-lock",
+    "image": "",
+    "permissions": [
+      82,
+      81
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 6,
+  "fields": {
+    "url": "/user/",
+    "name": "Usuarios",
+    "module_type": 1,
+    "description": "Permite administrar a los administradores del sistema",
+    "icon": "bi bi-person",
+    "image": "",
+    "permissions": [
+      87,
+      88,
+      89,
+      90
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 7,
+  "fields": {
+    "url": "/user/update/password/",
+    "name": "Cambiar password",
+    "module_type": null,
+    "description": "Permite cambiar tu password de tu cuenta",
+    "icon": "bi bi-key",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 8,
+  "fields": {
+    "url": "/user/update/profile/",
+    "name": "Editar perfil",
+    "module_type": null,
+    "description": "Permite cambiar la información de tu cuenta",
+    "icon": "bi bi-person",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 9,
+  "fields": {
+    "url": "/pos/provider/",
+    "name": "Proveedores",
+    "module_type": 2,
+    "description": "Permite administrar a los proveedores de las compras",
+    "icon": "bi bi-truck",
+    "image": "",
+    "permissions": [
+      59,
+      60,
+      61,
+      62
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 10,
+  "fields": {
+    "url": "/pos/category/",
+    "name": "Categorías",
+    "module_type": 2,
+    "description": "Permite administrar las categorías de los productos",
+    "icon": "bi bi-truck-flatbed",
+    "image": "",
+    "permissions": [
+      27,
+      28,
+      29,
+      30
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 11,
+  "fields": {
+    "url": "/pos/product/",
+    "name": "Productos",
+    "module_type": 2,
+    "description": "Permite administrar los productos del sistema",
+    "icon": "bi bi-box",
+    "image": "",
+    "permissions": [
+      51,
+      52,
+      53,
+      50
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 12,
+  "fields": {
+    "url": "/pos/purchase/",
+    "name": "Compras",
+    "module_type": 2,
+    "description": "Permite administrar las compras de los productos",
+    "icon": "bi bi-boxes",
+    "image": "",
+    "permissions": [
+      64,
+      65,
+      63
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 13,
+  "fields": {
+    "url": "/pos/product/stock/adjustment/",
+    "name": "Ajuste de Stock",
+    "module_type": 2,
+    "description": "Permite administrar los ajustes de stock de productos",
+    "icon": "bi bi-sliders",
+    "image": "",
+    "permissions": [
+      54
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 14,
+  "fields": {
+    "url": "/pos/expense/type/",
+    "name": "Tipos de Gastos",
+    "module_type": 3,
+    "description": "Permite administrar los tipos de gastos",
+    "icon": "bi bi-upc-scan",
+    "image": "",
+    "permissions": [
+      41,
+      42,
+      43,
+      40
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 15,
+  "fields": {
+    "url": "/pos/expense/",
+    "name": "Gastos",
+    "module_type": 3,
+    "description": "Permite administrar los gastos de la compañia",
+    "icon": "bi bi-chat-square-text",
+    "image": "",
+    "permissions": [
+      36,
+      37,
+      38,
+      39
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 16,
+  "fields": {
+    "url": "/pos/account/receivable/",
+    "name": "Cuentas por cobrar",
+    "module_type": 3,
+    "description": "Permite administrar las cuentas por cobrar de los clientes",
+    "icon": "bi bi-receipt",
+    "image": "",
+    "permissions": [
+      25,
+      26,
+      24
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 17,
+  "fields": {
+    "url": "/pos/account/payable/",
+    "name": "Cuentas por pagar",
+    "module_type": 3,
+    "description": "Permite administrar las cuentas por pagar de los proveedores",
+    "icon": "bi bi-cash",
+    "image": "",
+    "permissions": [
+      22,
+      23,
+      21
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 18,
+  "fields": {
+    "url": "/pos/customer/",
+    "name": "Clientes",
+    "module_type": 4,
+    "description": "Permite administrar los clientes del sistema",
+    "icon": "bi bi-credit-card",
+    "image": "",
+    "permissions": [
+      32,
+      33,
+      34,
+      35
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 19,
+  "fields": {
+    "url": "/pos/invoice/admin/",
+    "name": "Facturas",
+    "module_type": 4,
+    "description": "Permite administrar las ventas de los productos",
+    "icon": "bi bi-people",
+    "image": "",
+    "permissions": [
+      45,
+      46,
+      47,
+      49,
+      44
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 20,
+  "fields": {
+    "url": "/pos/quotation/",
+    "name": "Proformas",
+    "module_type": 4,
+    "description": "Permite administrar las cotizaciones de los clientes",
+    "icon": "bi bi-cart",
+    "image": "",
+    "permissions": [
+      91,
+      67,
+      68,
+      69,
+      70,
+      66
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 21,
+  "fields": {
+    "url": "/pos/credit/note/admin/",
+    "name": "Devoluciones",
+    "module_type": 4,
+    "description": "Permite administrar las notas de créditos de las ventas",
+    "icon": "bi bi-cart",
+    "image": "",
+    "permissions": [
+      72,
+      73,
+      75,
+      71
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 22,
+  "fields": {
+    "url": "/pos/invoice/customer/",
+    "name": "Facturas",
+    "module_type": null,
+    "description": "Permite administrar las ventas de los productos",
+    "icon": "bi bi-cart",
+    "image": "",
+    "permissions": [
+      49,
+      48
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 23,
+  "fields": {
+    "url": "/pos/credit/note/customer/",
+    "name": "Devoluciones",
+    "module_type": null,
+    "description": "Permite administrar las notas de créditos de las ventas",
+    "icon": "bi bi-cart",
+    "image": "",
+    "permissions": [
+      75,
+      74
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 24,
+  "fields": {
+    "url": "/pos/promotion/",
+    "name": "Promociones",
+    "module_type": 4,
+    "description": "Permite administrar las promociones de los productos",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": [
+      55,
+      56,
+      57,
+      58
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 25,
+  "fields": {
+    "url": "/report/invoice/",
+    "name": "Facturas",
+    "module_type": 5,
+    "description": "Permite ver los reportes de las ventas",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 26,
+  "fields": {
+    "url": "/report/purchase/",
+    "name": "Compras",
+    "module_type": 5,
+    "description": "Permite ver los reportes de las compras",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 27,
+  "fields": {
+    "url": "/report/expense/",
+    "name": "Gastos",
+    "module_type": 5,
+    "description": "Permite ver los reportes de los gastos",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 28,
+  "fields": {
+    "url": "/report/account/payable/",
+    "name": "Cuentas por Pagar",
+    "module_type": 5,
+    "description": "Permite ver los reportes de las cuentas por pagar",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 29,
+  "fields": {
+    "url": "/report/account/receivable/",
+    "name": "Cuentas por Cobrar",
+    "module_type": 5,
+    "description": "Permite ver los reportes de las cuentas por cobrar",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 30,
+  "fields": {
+    "url": "/report/result/",
+    "name": "Resultados",
+    "module_type": 5,
+    "description": "Permite ver los reportes de pérdidas y ganancias",
+    "icon": "bi bi-bar-chart",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 31,
+  "fields": {
+    "url": "/report/earning/",
+    "name": "Ganancias",
+    "module_type": 5,
+    "description": "Permite ver los reportes de las ganancias",
+    "icon": "bi bi-person",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 32,
+  "fields": {
+    "url": "/pos/customer/update/profile/",
+    "name": "Editar perfil",
+    "module_type": null,
+    "description": "Permite cambiar la información de tu cuenta",
+    "icon": "bi bi-building",
+    "image": "",
+    "permissions": []
+  }
+},
+{
+  "model": "security.module",
+  "pk": 33,
+  "fields": {
+    "url": "/pos/company/update/",
+    "name": "Compañia",
+    "module_type": null,
+    "description": "Permite gestionar la información de la compañia",
+    "icon": "bi bi-building",
+    "image": "",
+    "permissions": [
+      31
+    ]
+  }
+},
+{
+  "model": "security.module",
+  "pk": 34,
+  "fields": {
+    "url": "/pos/tpv/",
+    "name": "Punto de Venta",
+    "module_type": 4,
+    "description": "Permite realizar ventas en el sistema",
+    "icon": "bi bi-cart",
+    "image": "",
+    "permissions": [
+      91
+    ]
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 31,
+  "fields": {
+    "group": 2,
+    "module": 7
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 32,
+  "fields": {
+    "group": 2,
+    "module": 22
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 33,
+  "fields": {
+    "group": 2,
+    "module": 23
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 34,
+  "fields": {
+    "group": 2,
+    "module": 32
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 68,
+  "fields": {
+    "group": 1,
+    "module": 1
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 69,
+  "fields": {
+    "group": 1,
+    "module": 2
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 70,
+  "fields": {
+    "group": 1,
+    "module": 3
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 71,
+  "fields": {
+    "group": 1,
+    "module": 4
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 72,
+  "fields": {
+    "group": 1,
+    "module": 5
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 73,
+  "fields": {
+    "group": 1,
+    "module": 6
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 74,
+  "fields": {
+    "group": 1,
+    "module": 7
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 75,
+  "fields": {
+    "group": 1,
+    "module": 8
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 76,
+  "fields": {
+    "group": 1,
+    "module": 9
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 77,
+  "fields": {
+    "group": 1,
+    "module": 10
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 78,
+  "fields": {
+    "group": 1,
+    "module": 11
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 79,
+  "fields": {
+    "group": 1,
+    "module": 12
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 80,
+  "fields": {
+    "group": 1,
+    "module": 13
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 81,
+  "fields": {
+    "group": 1,
+    "module": 14
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 82,
+  "fields": {
+    "group": 1,
+    "module": 15
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 83,
+  "fields": {
+    "group": 1,
+    "module": 16
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 84,
+  "fields": {
+    "group": 1,
+    "module": 17
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 85,
+  "fields": {
+    "group": 1,
+    "module": 18
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 86,
+  "fields": {
+    "group": 1,
+    "module": 19
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 87,
+  "fields": {
+    "group": 1,
+    "module": 20
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 88,
+  "fields": {
+    "group": 1,
+    "module": 21
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 89,
+  "fields": {
+    "group": 1,
+    "module": 24
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 90,
+  "fields": {
+    "group": 1,
+    "module": 25
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 91,
+  "fields": {
+    "group": 1,
+    "module": 26
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 92,
+  "fields": {
+    "group": 1,
+    "module": 27
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 93,
+  "fields": {
+    "group": 1,
+    "module": 28
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 94,
+  "fields": {
+    "group": 1,
+    "module": 29
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 95,
+  "fields": {
+    "group": 1,
+    "module": 30
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 96,
+  "fields": {
+    "group": 1,
+    "module": 31
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 97,
+  "fields": {
+    "group": 1,
+    "module": 33
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 98,
+  "fields": {
+    "group": 1,
+    "module": 34
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-11",
+    "hour": "17:32:44.611",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-12",
+    "hour": "08:26:37.369",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-12",
+    "hour": "08:27:40.848",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-12",
+    "hour": "09:32:15.726",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-12",
+    "hour": "15:57:53.286",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-13",
+    "hour": "12:52:33.877",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-14",
+    "hour": "21:43:07.874",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "09:39:19.104",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "10:07:04.979",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Edge 134.0.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "11:10:08.845",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "12:59:29.812",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "17:38:24.041",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "17:44:23.895",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "17:49:34.922",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "18:02:38.016",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "18:05:21.061",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 17,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "18:37:19.790",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "18:39:23.041",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 19,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "18:42:10.328",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 20,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "18:58:53.980",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 21,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "19:00:45.321",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 22,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "19:22:03.219",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 23,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "19:37:31.857",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 136.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 24,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-03-15",
+    "hour": "20:54:48.362",
+    "remote_addr": "192.168.144.134",
+    "http_user_agent": "iPhone / iOS 17.6.1 / Mobile Safari 17.6"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 25,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-04-08",
+    "hour": "11:23:24.135",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 137.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 26,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-04-08",
+    "hour": "11:23:50.040",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 137.0"
+  }
+},
+{
+  "model": "security.useraccess",
+  "pk": 27,
+  "fields": {
+    "user": 1,
+    "date_joined": "2025-04-08",
+    "hour": "11:43:42.227",
+    "remote_addr": "127.0.0.1",
+    "http_user_agent": "PC / Windows 10 / Firefox 137.0"
+  }
+},
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$16MBpPKw1k2K3aEYYBQiC2$s00zYpgqzTp/VbEXg8lSRwdaKC8H/ZhXb7hpFHfPBpE=",
+    "last_login": "2025-04-08T11:43:42.135Z",
+    "is_superuser": true,
+    "names": "REVALORA SANTANDER",
+    "username": "admin",
+    "image": "users/2025/03/11/Logo_Azul_Vertical-100.jpg",
+    "email": "annaweb@annacvl.com",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2025-03-11T17:32:20.533Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$ygQACVcqYdlrA0gsQFc7DV$p8QOOxR9093cmHZVdT+8eQsUQ6hHvQJj0qiv62mhUTk=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "CONSUMIDOR FINAL",
+    "username": "9999999999",
+    "image": "",
+    "email": "consumidorfinal@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:38.254Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$wAF8TPJ7SgluAmIB5X6UMf$+ELpWCtc1QHjNwmfr4UCvJrXuo5VUYcknir2IYLjHDY=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "AGUSTIN GARCIA CADENA ABONOS",
+    "username": "1754696373",
+    "image": "",
+    "email": "agroinsumostulcan@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:38.667Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$UohWB5txaocbflGCkXIMmE$ETrHvZS5m2R2ddTiDxOKCO2E5tbB8n21i87/QvaDOt0=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "ALEX ANTONIO TERAN RIOS",
+    "username": "0401325345",
+    "image": "",
+    "email": "alexeh19@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:39.075Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$E8VYv2mF9kilIfKXOzEY1x$MOoBcSrjyBmlnSKj7eLCY6RUbUiqFlai7/CSEaOOJMw=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "ALVARO EDUARDO JURADO CHUQUIZAN",
+    "username": "0400958609",
+    "image": "",
+    "email": "alvarojch10@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:39.474Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$QF2FYxN6sorLe475vOxTc1$glXOvOJeA0w4MLAy18cJVWElkdwAiDhyDhQhKodnSgc=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "ANDREA DEL CARMEN POTOSI CEPEDA",
+    "username": "0401977327",
+    "image": "",
+    "email": "andrea.carmen@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:39.877Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$qVpHlXRCFhDoAMfuX7dz19$++/JClwDc7S+naRbw+eBpbwxabmzeL/ALZrECgpOIxI=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "ANITA SOCORRO ROSERO TACAN",
+    "username": "0401294400",
+    "image": "",
+    "email": "alexis.rosero17@outlook.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:40.276Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$inytO40uSToVB4Vp8Blrql$3DYBWtzLH8SRLmI3DkIvLk9XQ6AokbbttMHyJrIexYM=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "ARGOTI OVIEDO PAOLA XIMENA",
+    "username": "0401256409",
+    "image": "",
+    "email": "paola.argoti94@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:40.676Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$8fLnh3WQhCSQUR6AN6TSxq$OGPuIqSQoAbOvBi/fUeQEBQ2aPxz3IlsBryNQQLO5EY=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "AYALA MARTINEZ FRANKLIN DAVID",
+    "username": "0402038418",
+    "image": "",
+    "email": "fdayalam@utn.edu.ec",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:41.075Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$W8K2bhBrXC3Nxzx4AojgeN$JVyy3c+6+lZgnsHmC8CUQ9sgjj3IQ/dM9q0Pxrn5MB0=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "BALSECA VILLEGAS MARCO VINICIO",
+    "username": "1713379970",
+    "image": "",
+    "email": "vicobal_04@yahoo.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:41.469Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$2Qp7R66xmApDZLdofzSTL2$kaIsTUPKY6K5hXDv3cSmrd6ErRezV9YOAFJe6YnVjoQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "RODRIGUEZ CARRERA BETTY MABELA",
+    "username": "1713841763",
+    "image": "",
+    "email": "casaminaoro@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:41.873Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$6TmYU6sMr182OMr19abUbI$QAxxdykCxGIMIw2y8TpJX9xjOZiRK9Op8hCVSRHCIew=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "BRAYAN ALEXANDER ROMO AGUIRRE PEKIN",
+    "username": "0401478417",
+    "image": "",
+    "email": "alexanrromo6@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:42.281Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$ZoxI5F8MFqdObywHADHnL3$02PTTczdm4vl4B/3eZmhSN4WeJEq9GUxaqe/ToFB2gw=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "BRAYAN DAVID GUERRON TAPIA",
+    "username": "0402082986",
+    "image": "",
+    "email": "davisguerron@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:42.683Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$NqsOGC53SlisNJnH5uEGki$GVy1XFcDurA4gMSEeSoJrt1oKzovupDe1r4Ndr/rQtg=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "CAMACAS MORILLO YADIRA ELIZABETH",
+    "username": "0401488952",
+    "image": "",
+    "email": "yady_49@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:43.082Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$yD9X5P3LN155bKmbpTpUdC$/FMmQARM80fpZaTn40PO4SCd6a2N8pdEWZ8CG0ChHzE=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "CARLOS ROLANDO ARGOTI ARGOTI",
+    "username": "0400875613",
+    "image": "",
+    "email": "maji.argo@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:43.479Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$KIi34zF9vU1Lqu3wSwXX2O$ou/fkDHwkMxrrhTRikMc2vbQYMWoIxr8KtFXlNYKnsU=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "CHICANGO TREJO JENIFFER ELIZABEHT",
+    "username": "0401624176",
+    "image": "",
+    "email": "03diefer@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:43.872Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$uqP7Mdzxiws7x3JHWoLX8f$csZvPbsy+YvvFF4lXDJi6eCKeK3mvHI2i9cbXw4i3Rk=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "CRISTIAN JAVIER GUERRERO POZO",
+    "username": "0401497185",
+    "image": "",
+    "email": "magandre2006@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:44.266Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 18,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$e7JbRajxRX2uPjNRu1JeiS$qLPCGBqukYGIomqvcOEFyaOFcteTviJU3HtDh9dHSC8=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "FRAGA REYES ANDREA ELIZABETH",
+    "username": "0401641378",
+    "image": "",
+    "email": "cristianmorrios@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:44.661Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$4Sxjvr1f6WxG6OJx8WnEWy$BWstOaDtbMiVPaGEwX9tFfYXieS2E5rMCTfiaoKoaQU=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "VILLACRECES ACOSTA CRISTIAN STIVEN",
+    "username": "0402075162",
+    "image": "",
+    "email": "villacreces.acosta.estiven@gmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:45.059Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$3Zq9UKQ4vIw8I78ISa57Fu$sx1aa/aQ3RF0bs5pNKvqxUqiIHkCRPg8r3hHiMGGwL0=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "DAYANA CAROLINA NARVAEZ CRUZ",
+    "username": "0402037238",
+    "image": "",
+    "email": "dayanarvaez1997@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:45.456Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 21,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$4MmCaHFmQFNomWNimnh5ru$xBWJQvjPH60RMTcb/A18dzujV3GjetCTr4j0uVTvRqQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "DELIA ELIZABETH JIMENEZ TIRIRA",
+    "username": "0401054077",
+    "image": "",
+    "email": "delissjim72@hotmail.com",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-11T17:33:45.848Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 22,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$wOlhoUkoajYA0tYJgCSt6N$eS38IYxxGQrfcS8fOGGwQ5uYG3CoKDf7KCJXd/AFrHA=",
+    "last_login": null,
+    "is_superuser": false,
+    "names": "Anna",
+    "username": "X5501890Z",
+    "image": "",
+    "email": null,
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2025-03-13T09:34:02.182Z",
+    "is_password_change": false,
+    "password_reset_token": null,
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+}
+]

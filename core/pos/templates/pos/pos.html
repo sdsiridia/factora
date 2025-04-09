@@ -1,0 +1,419 @@
+{% extends 'skin.html' %}
+{% load static %}
+
+{% block assets %}
+    <script src="{% static 'lib/bootstrap-4.6.0/js/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap-4.6.0/js/popper.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap-4.6.0/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'lib/adminlte-3.2.0/js/adminlte.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- Panel de Productos -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="card-title">
+                                <i class="bi bi-box"></i> Productos
+                            </h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="search_product" placeholder="Buscar producto...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="btn_search">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Productos Rápidos -->
+                    <div class="row mb-4" id="quick_products">
+                        <!-- Los productos rápidos se cargarán aquí -->
+                    </div>
+                    <!-- Lista de Productos -->
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="tbl_products">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre</th>
+                                    <th>Stock</th>
+                                    <th>Precio</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel del Carrito -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="bi bi-cart"></i> Carrito
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="tbl_cart">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Cant.</th>
+                                    <th>Precio</th>
+                                    <th>Total</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Cliente</label>
+                                <select class="form-control" id="customer">
+                                    <option value="">Seleccione un cliente</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Forma de Pago</label>
+                                <select class="form-control" id="payment_type">
+                                    <option value="cash">Efectivo</option>
+                                    <option value="card">Tarjeta</option>
+                                    <option value="transfer">Transferencia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Subtotal</label>
+                                <input type="text" class="form-control" id="subtotal" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>IVA ({{ tax_rate }}%)</label>
+                                <input type="text" class="form-control" id="tax" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Total</label>
+                                <input type="text" class="form-control" id="total" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-success btn-block" id="btn_save">
+                                <i class="bi bi-save"></i> Guardar Venta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Asegurarnos de que jQuery está disponible
+    if (typeof jQuery === 'undefined') {
+        console.error('jQuery no está cargado');
+    }
+
+    let cart = [];
+    const tax_rate = parseFloat('{{ tax_rate }}');
+
+    // Función para obtener el token CSRF
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    // Cargar productos inmediatamente al cargar la página
+    $(document).ready(function() {
+        console.log('jQuery ready, iniciando carga inicial...');
+        loadProducts();
+        loadCustomers();
+    });
+
+    // Configurar eventos
+    $(document).ready(function() {
+        console.log('Configurando eventos...');
+        
+        // Búsqueda de productos
+        $('#btn_search').on('click', function(e) {
+            e.preventDefault();
+            console.log('Botón de búsqueda clickeado');
+            const searchTerm = $('#search_product').val();
+            console.log('Término de búsqueda:', searchTerm);
+            loadProducts(searchTerm);
+        });
+
+        // Búsqueda al presionar Enter
+        $('#search_product').on('keypress', function(e) {
+            if(e.which == 13) {
+                e.preventDefault();
+                console.log('Enter presionado en búsqueda');
+                const searchTerm = $(this).val();
+                console.log('Término de búsqueda:', searchTerm);
+                loadProducts(searchTerm);
+            }
+        });
+
+        // Guardar venta
+        $('#btn_save').on('click', function() {
+            saveSale();
+        });
+    });
+
+    function loadProducts(search = '') {
+        console.log('Iniciando búsqueda de productos...');
+        const url = '{% url "pos:tpv" %}';
+        console.log('URL de búsqueda:', url);
+        
+        // Si no hay término de búsqueda, mostrar productos iniciales
+        if (!search) {
+            console.log('Mostrando productos iniciales...');
+            const initialProducts = {{ initial_products|safe }};
+            displayProducts(initialProducts);
+            return;
+        }
+        
+        const formData = new FormData();
+        formData.append('action', 'search');
+        formData.append('search', search);
+        formData.append('csrfmiddlewaretoken', getCookie('csrftoken'));
+        
+        console.log('Datos de búsqueda:', {
+            action: 'search',
+            search: search,
+            csrfmiddlewaretoken: getCookie('csrftoken')
+        });
+        
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            beforeSend: function() {
+                console.log('Enviando petición AJAX...');
+            },
+            success: function(request) {
+                console.log('Respuesta recibida:', request);
+                displayProducts(request);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error en la petición AJAX:', error);
+                console.error('Estado:', status);
+                console.error('Respuesta:', xhr.responseText);
+            }
+        });
+    }
+
+    function displayProducts(products) {
+        console.log('Mostrando productos:', products);
+        let html = '';
+        let quickHtml = '';
+        
+        if (!products || products.length === 0) {
+            console.log('No se encontraron productos');
+            html = '<tr><td colspan="5" class="text-center">No se encontraron productos</td></tr>';
+        } else {
+            console.log('Productos encontrados:', products.length);
+            products.forEach(function(item) {
+                console.log('Procesando producto:', item);
+                // Productos en la tabla
+                html += `
+                    <tr>
+                        <td>${item.code || ''}</td>
+                        <td>${item.name || ''}</td>
+                        <td>${item.stock || 0}</td>
+                        <td>${item.current_price || 0}</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="addToCart(${JSON.stringify(item)})">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+
+                // Productos rápidos (solo si no hay búsqueda)
+                if (!search) {
+                    quickHtml += `
+                        <div class="col-md-3 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">${item.name || ''}</h5>
+                                    <p class="card-text">
+                                        <strong>Stock:</strong> ${item.stock || 0}<br>
+                                        <strong>Precio:</strong> ${item.current_price || 0}
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-sm" onclick="addToCart(${JSON.stringify(item)})">
+                                        <i class="bi bi-plus-lg"></i> Agregar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+        }
+        
+        $('#tbl_products tbody').html(html);
+        if (!search) {
+            $('#quick_products').html(quickHtml);
+        }
+    }
+
+    function loadCustomers() {
+        $.ajax({
+            url: '{% url "pos:tpv" %}',
+            type: 'POST',
+            headers: {
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            data: {
+                'action': 'search_customers'
+            },
+            success: function (request) {
+                let html = '<option value="">Seleccione un cliente</option>';
+                request.forEach(function (item) {
+                    html += `<option value="${item.id}">${item.names}</option>`;
+                });
+                $('#customer').html(html);
+            }
+        });
+    }
+
+    function addToCart(product) {
+        let found = false;
+        cart.forEach(function (item) {
+            if (item.id === product.id) {
+                item.quantity += 1;
+                item.total = item.quantity * item.current_price;
+                found = true;
+            }
+        });
+        if (!found) {
+            cart.push({
+                id: product.id,
+                name: product.name,
+                price: product.current_price,
+                quantity: 1,
+                total: product.current_price
+            });
+        }
+        updateCart();
+    }
+
+    function updateCart() {
+        let html = '';
+        let subtotal = 0;
+        cart.forEach(function (item) {
+            subtotal += item.total;
+            html += `
+                <tr>
+                    <td>${item.name}</td>
+                    <td>
+                        <input type="number" class="form-control form-control-sm" value="${item.quantity}" 
+                               onchange="updateQuantity(${item.id}, this.value)">
+                    </td>
+                    <td>${item.price}</td>
+                    <td>${item.total.toFixed(2)}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id})">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `;
+        });
+        $('#tbl_cart tbody').html(html);
+        $('#subtotal').val(subtotal.toFixed(2));
+        let tax = subtotal * (tax_rate / 100);
+        $('#tax').val(tax.toFixed(2));
+        $('#total').val((subtotal + tax).toFixed(2));
+    }
+
+    function updateQuantity(id, quantity) {
+        cart.forEach(function (item) {
+            if (item.id === id) {
+                item.quantity = parseInt(quantity);
+                item.total = item.quantity * item.price;
+            }
+        });
+        updateCart();
+    }
+
+    function removeFromCart(id) {
+        cart = cart.filter(function (item) {
+            return item.id !== id;
+        });
+        updateCart();
+    }
+
+    function saveSale() {
+        if (cart.length === 0) {
+            alert('El carrito está vacío');
+            return;
+        }
+        if (!$('#customer').val()) {
+            alert('Debe seleccionar un cliente');
+            return;
+        }
+        $.ajax({
+            url: '{% url "pos:tpv" %}',
+            type: 'POST',
+            headers: {
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            data: {
+                'action': 'add',
+                'customer': $('#customer').val(),
+                'payment_type': $('#payment_type').val(),
+                'products': JSON.stringify(cart)
+            },
+            success: function (request) {
+                if (request.error) {
+                    alert(request.error);
+                } else {
+                    alert('Venta guardada correctamente');
+                    cart = [];
+                    updateCart();
+                }
+            }
+        });
+    }
+</script>
+{% endblock %} 
